@@ -1,0 +1,14 @@
+<ion-card expand="full">
+  <ion-card-header>
+    <div class="flex">
+      <ion-icon type="button" class="icon-person" name="person-sharp"></ion-icon>
+      <ion-card-title class="ion-text-capitalize" size="small">{{person.name}} {{person.lastName}}</ion-card-title>
+    </div>
+    <ion-icon class="icon-delete" name="trash" (click)="deletePerson()"></ion-icon>
+  </ion-card-header>
+  <ion-card-content  class="ion-text-capitalize">
+    <p>Edad: <a class="attribute">{{person.age}}</a></p>
+    <p>Direccion: <a class="attribute">{{person.address}}</a></p>
+    <p>Edad:  <a class="attribute">{{person.rut}}</a></p>
+  </ion-card-content>
+</ion-card> 

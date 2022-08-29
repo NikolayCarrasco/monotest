@@ -1,0 +1,18 @@
+<mat-card class="person-card">
+	<div class="card-header">
+    <mat-card-header>
+				<div mat-card-avatar>
+					<span class="material-icons person-icon">person</span>
+				</div>
+				<mat-card-title>{{person.name}} {{person.lastName}}</mat-card-title>
+				<mat-card-subtitle class="person-info">{{person.rut}}</mat-card-subtitle>
+    </mat-card-header>
+		<button mat-button class="delete-button" (click)="deletePerson()">
+			<span class="material-icons delete-icon">delete</span>
+		</button>
+	</div>
+	<mat-card-content>
+		<p class="person-info">Edad: {{person.age}} años</p>
+		<p class="person-info">Dirección: {{person.address}}</p>
+	</mat-card-content>
+</mat-card>

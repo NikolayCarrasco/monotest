@@ -1,0 +1,11 @@
+<div class="container-flow">
+	<div class="title">
+		<h2 class="people-title">Personas:</h2>
+		<button mat-button class="button-refresh" (click)="refresh()">
+			<span class="material-icons icon-refresh">replay</span>
+		</button>
+	</div>
+	<div *ngFor="let person of people">
+		<my-org-person [person]="person"></my-org-person>
+	</div>
+</div>

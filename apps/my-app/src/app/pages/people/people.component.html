@@ -1,0 +1,15 @@
+<ion-toolbar color="dark">
+  <ion-title>
+    Personas
+  </ion-title>
+</ion-toolbar>
+<ion-content [fullscreen]="true">
+  <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+  <ion-list>
+    <div *ngFor="let person of people">
+      <my-org-person [person]="person"></my-org-person>
+    </div>
+</ion-list>
+</ion-content>

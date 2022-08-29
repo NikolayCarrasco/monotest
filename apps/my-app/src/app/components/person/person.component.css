@@ -1,0 +1,20 @@
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.icon-person{
+    font-size: 26px;
+    color: black;
+    margin-right: 0.5rem;
+}
+
+.icon-delete{
+    font-size: 22px;
+    color: red;
+}
+
+ion-card-header{
+    display: flex;
+    justify-content: space-between;
+}
